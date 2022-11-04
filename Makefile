@@ -1,7 +1,7 @@
-all: fileSystemReader
+all: exFAT_OS_Read_Operate
 
-fileSystemReader: fileSystemReader.c
-	clang fileSystemReader.c -Wall -Wpedantic -Wextra -Werror -o fileSystemReader
+fileSystemReader: exFAT_OS_Read_Operate.c
+	clang exFAT_OS_Read_Operate.c -Wall -Wpedantic -Wextra -Werror -o exFAT_OS_Read_Operate
 
 clean:
-	rm -f fileSystemReader
+	rm -f exFAT_OS_Read_Operate
